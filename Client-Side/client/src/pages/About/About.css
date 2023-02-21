@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("/font/Poppins-Bold.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("/font/Poppins-Medium.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("/font/Poppins-Regular.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Semibold";
+    src: url("/font/Poppins-SemiBold.otf");
+}
+
+
+.about-header {
+    font-family: "Poppins-Bold";
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content-header{
+    font-family: "Poppins-Bold";
+}
+
+.mission-container{
+    display: flex;
+}
+
+.mission{
+    background: #0047ab;
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    font-family: "Poppins-Regular";
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.vision-container{
+    display: flex;
+}
+
+.vision{
+    background: #0047ab;
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    font-family: "Poppins-Regular";
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.values-container{
+    display: flex;
+}
+
+.values{
+    background: #0047ab;
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    font-family: "Poppins-Regular";
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.mission-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+.vision-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    width: 130px;
+    height: 130px;
+}
+
+.values-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    width: 130px;
+    height: 130px;
+}
+
+.team-header-container{
+    text-align: center;
+}
+
+.team-header{
+    font-family: "Poppins-Bold";
+}
+
+.team {
+    background-color: #df2935;
+    color: white;
+    margin-top: 20px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+    height: 500px;
+	padding: 30px 50px;
+}
+
+.gallery {
+    margin: 10px;
+    border-radius: 50px 50px 50px 50px;
+    border: 3px solid #ffffff;
+    background-color: #0047ab;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery:hover {
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gallery img {
+    margin-top: 10px;
+    border-radius: 200px;
+    height: auto;
+    width: 120px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.teammail-color a{
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Poppins-Regular";
+}
+
+.teammail-color a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px ){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mission{
+        width: 300px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .vision {
+        width: 300px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .values {
+        width: 300px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .about-gallery-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .about-header {
+        font-family: "Poppins-Bold";
+        text-align: center;
+        font-size: 30px;
+    }
+ 
+    .team-header-container{
+        text-align: center;
+    }
+
+    .team-header{
+        font-family: "Poppins-Semibold";
+    }
+
+    .team {
+        margin-top: 20px;
+        box-shadow: 0 1px 1px 0 rgba(7, 7, 7, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        height: 1550px;
+        padding: 30px 50px;
+    }
+
+    .gallery {
+        margin: 5px;
+        border-radius: 50px 50px 50px 50px;
+        border: 3px solid #0011ff;
+        width: 220px;
+    }
+
+    .gallery img {
+        margin-top: 10px;
+        border-radius: 200px;
+        height: auto;
+        width: 120px;
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 11px;
+    }
+}

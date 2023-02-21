@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("/font/Poppins-Light.otf");
+}
+
+.registrationForm{
+    display: flex;
+}
+
+.column{
+    margin-top: 4vw;
+    flex: 50%;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    font-family: "Poppins-Light";
+    border: 0;
+    border-bottom: 3px solid rgb(29, 64, 189);
+    outline: 0;
+    font-size: 1em;
+    transition: border-bottom 0.2s;
+    margin-bottom: 4vw;
+    width: 30vw;
+    margin-left: 4vw;
+}
+
+.input-field input:focus {
+    border-bottom: 2px solid rgb(255, 15, 15);
+}
+
+.input-field label {
+    font-family: "Poppins-Light";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    pointer-events: none;
+    transition: transform 0.2s, font-size 0.2s;
+    margin-left: 4vw;
+}
+
+.input-field input:focus + label,
+.input-field input:valid + label {
+    transform: translateY(-100%);
+    font-size: 0.8em;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.btnSubmit {
+    backface-visibility: hidden;
+    background: #332cf2;
+    border: 0;
+    border-radius: .375rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,Helvetica,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.3;
+    padding: 1rem 1.25rem;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 26vw;
+}
+
+.btnSubmit:disabled {
+    color: #787878;
+    cursor: auto;
+}
+
+.btnSubmit:not(:disabled):hover {
+    transform: scale(1.05);
+}
+
+.btnSubmit:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+}
+
+.btnSubmit:focus {
+    outline: 0 solid transparent;
+}
+
+.btnSubmit:focus:before {
+    border-width: .125rem;
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+
+.btnSubmit:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+
+.btnSubmit:not(:disabled):active {
+    transform: translateY(.125rem);
+}

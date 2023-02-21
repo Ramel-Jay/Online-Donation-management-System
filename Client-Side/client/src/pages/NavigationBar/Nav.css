@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("/font/Poppins-Medium.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("/font/Poppins-Regular.otf");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("/font/Poppins-SemiBold.otf");
+}
+/* Navbar design */
+.navbar {
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/*Font color words on nav*/
+.wide-nav{
+  color: #020202;
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+  align-items: center;
+}
+
+/*Font style words on nav*/
+.wide-nav p{
+  justify-content: space-around;
+  margin-left: 30px;
+  font-family: "Poppins-Regular";
+  font-size: 18px;
+  font-weight: 300px;
+  cursor: pointer;
+}
+
+/*Hover color on navbar words*/
+.wide-nav p:hover{
+  border-bottom: 2px solid #f50707;
+  color: red;
+  transition: ease-in-out .5s;
+}
+
+.logo {
+  height: 80px;
+  width: 150px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.toggle {
+  cursor: pointer;
+  display: none;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.links p {
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.show {
+  display: flex;
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+
+  .logo{
+    width: 70px;
+    height: 50px;
+    margin-left: 50px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+  }
+
+  .wide-nav p{
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    margin-right: 65px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+    transform: translateX(0);
+  }
+}

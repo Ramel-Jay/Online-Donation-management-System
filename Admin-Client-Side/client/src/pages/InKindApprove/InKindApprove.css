@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("/font/Poppins-Bold.otf");
+}
+
+.headerTitle{
+    font-family: "Poppins-Bold";
+    font-size: 3vw;
+    text-align: center;
+}
+
+.searchIcon{
+    padding: 1vw 1.5vw 1vw 3vw;
+    background-color: gray;
+    font-size: 2vw;
+    top: 9.5vw;
+    position: absolute;
+}

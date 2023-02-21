@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("/font/Poppins-Bold.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("/font/Poppins-Medium.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("/font/Poppins-Regular.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Semibold";
+    src: url("/font/Poppins-SemiBold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-header {
+    font-family: "Poppins-Bold";
+    text-align: center;
+    font-size: 50px;
+}
+
+.contacts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content-header{
+    font-family: "Poppins-Bold";
+}
+
+.inquiries-container{
+    display: flex;
+}
+
+.inquiries{
+    background: #0047ab;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    font-family: "Poppins-Regular";
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 200px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.location-container{
+    display: flex;
+}
+
+.location{
+    background: #0047ab;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 20px ;
+    color: white;
+    font-family: "Poppins-Regular";
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10px;
+    margin-right: 200px;
+    border-radius: 30px;
+}
+
+.email-color a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: "Poppins-Regular";
+}
+
+.email-color a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.number-color {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins-Regular";
+}
+
+.email-design {
+    font-family: "Poppins-Regular";
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; 
+}
+
+@media screen and (max-width: 600px ){
+    .contacts-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 350px;
+    }
+
+    .contacts-header {
+        font-family: "Poppins-Bold";
+        text-align: center;
+        font-size: 30px;
+        width: 350px;
+    }
+
+    .inquiries {
+        margin-left: 15px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .location {
+        margin-left: 15px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .map-container{
+        width: 350px;
+    }
+
+    .map-container iframe{
+        width: 345px;
+    }
+}

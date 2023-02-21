@@ -1,0 +1,286 @@
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("/font/Poppins-Bold.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("/font/Poppins-Medium.otf");
+}
+
+.Background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.cash-quote{
+    font-family: "Poppins-Medium";
+    color: white;
+    font-size: 32px;
+    margin-top: 120px;
+    margin-left: 40px;
+    float: left;
+}
+
+.instruction-box{
+    background: #0047ab;
+    width: 700px;
+    height: 210px;
+    margin-left: 560px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins-Regular";
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.cash-header{
+    font-family: "Poppins-Bold";
+    font-size: 50px;
+}
+
+.instruction {
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.qrcode-box{
+    background: #ffffff;
+    width: 700px;
+    height: 270px;
+    margin-left: 560px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+.qrcode{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-header{
+    text-align: center;
+    font-family: "Poppins-SemiBold";
+    margin-bottom: 10px;
+    margin-right: 350px;
+    font-size: 25px;
+    color: white;
+}
+
+.form-container{
+    background-color: #0047ab;
+    font-family: "Poppins-Regular";
+    color: #b8b7b7;
+    margin-left: 560px;
+    margin-right: auto;
+    width: 700px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.donate-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.donation-form{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.input-field{
+    padding-left: 5px;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    background-color: transparent;
+    border-bottom: solid 2px #000000;
+}
+
+.input-field::placeholder{
+    color: #b8b7b7;
+}
+
+.input-field:focus{
+    outline: none;
+    border-bottom: solid 2px #ff0000
+}
+
+.select-field{
+    padding-left: 5px;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    background-color: transparent;
+    border-bottom: solid 2px #000000;
+    width: 260px;
+    cursor: pointer;
+}
+
+.option-gender{
+    background-color: #000000;
+}
+
+.select-field:focus{
+    outline:none;
+}
+
+.input-field::-webkit-inner-spin-button,
+.input-field::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.btnDonate {
+    backface-visibility: hidden;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #0047ab;
+    cursor: pointer;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    height: 60px;
+    line-height: 1.15;
+    margin: 12px 100px 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 78%;
+}
+
+.btnDonate:hover{
+    background-color: #DF2935;
+    color: white;
+}
+
+.btnDonate:disabled {
+    cursor: default;
+}
+
+.btnDonate:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+@media screen and (max-width: 600px){
+    .Background{
+        width: 350px;
+    }
+
+    .cash-quote{
+        display: none;
+    }
+
+    .instruction-box{
+        width: 280px;
+        height: 150px;
+        margin-left: 23px;
+        margin-right: auto;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cash-header{
+        font-size: 20px;
+    }
+
+    .instruction {
+        font-size: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .qrcode-box{
+        width: 280px;
+        height: 140px;
+        margin-left: 24px;
+        margin-right: auto;
+        margin-bottom: 5px;
+        border-radius: 15px;
+        display: block;
+    }
+
+    .qrcode{
+        width: 250px;
+        height: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-header{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+
+    .form-container{
+        width: 280px;
+        height: 350px;
+        margin-left: 24px;
+        margin-right: 35px;
+        margin-bottom: 5px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .input-field{
+        padding-left: 5px;
+        font-family: "Poppins-Regular";
+        font-size: 10px;
+        background-color: transparent;
+        border-bottom: solid 1px #000000;
+        width: 100px;
+    }
+
+    .select-field{
+        padding-left: 5px;
+        font-size: 12px;
+        width: 2px;
+    }
+
+    .option-gender{
+        font-size: 12px;
+    }
+
+    .btnDonate {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 220px;
+        height: 40px;
+        width: 120px;
+    }
+    
+}
